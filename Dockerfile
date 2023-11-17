@@ -28,6 +28,6 @@ COPY . .
 
 # start app
 
-EXPOSE 9666
+EXPOSE 5083
 CMD ["node", "spacedeck.js"]
 
