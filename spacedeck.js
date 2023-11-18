@@ -117,7 +117,7 @@ db.init();
 const host = config.get('host');
 const port = config.get('port');
 
-const server = http.Server(app).listen(port, host, () => {
+const server = http.Server(app).listen(port, '0.0.0.0', () => {
   
   if ("send" in process) {
     process.send('online');
