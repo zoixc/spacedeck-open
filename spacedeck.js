@@ -33,8 +33,8 @@ console.log("Booting Spacedeck Open… (environment: " + app.get('env') + ")");
 app.use(logger(isProduction ? 'combined' : 'dev'));
 
 i18n.expressBind(app, {
-  locales: ["de", "en", "es", "fr", "hu", "oc"],
-  defaultLocale: "en",
+  locales: ["de", "en", "es", "fr", "hu", "oc", "ru"],
+  defaultLocale: "ru",
   cookieName: "spacedeck_locale",
   devMode: (app.get('env') == 'development')
 });
